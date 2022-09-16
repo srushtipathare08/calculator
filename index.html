@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            @font-face {
+                font-family: 'Digital';
+                src: url('DS-DIGI.TTF') format('truetype');
+            }
+
+            .row{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+           }
+
+            .calculator-container{
+                width: 300px;
+                background-color:#000066;
+                padding: 20px;
+                border-radius: 15px;
+                display: block;
+                margin: auto;
+            }
+
+            .btn{
+                height: 60px;
+                width: 60px;
+                font-size: 40px;
+                font-weight: bold;
+                background-color:#d1d1e0;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
+            .btn:hover{
+                cursor:pointer;
+                box-shadow: 0px 2px 5px white;
+                transition: 0.5s;
+            }
+            .bg-yellow{
+                 background-color:#ffcc00;
+                 color: white;
+                 border: 2px solid white;
+            }
+            .bg-red{
+                background-color: #ff0066;
+            }
+            .input-screen{
+                width: 100%;
+                height: 65px;
+                margin-bottom: 20px;
+                font-size: 60px;
+                border-radius: 10px;
+                background-color: #b3e6cc;
+                font-family: 'Digital';
+            }
+            .brand{
+                color: white;
+                font-weight: bold;
+            }
+            .btn dot{
+                background-color: #d1d1e0;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+
+       <div class="calculator-container">
+        <span class="brand">CASIO</span>
+          <div class="row">
+            <input type="text" id="input" class="input-screen"/>
+            
+        </div>
+         
+        <div class="row">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn bg-yellow">÷</button>
+         </div>
+
+         <div class="row">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn bg-yellow">x</button>
+         </div>
+
+         <div class="row">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn bg-yellow">-</button>
+         </div>
+
+         <div class="row">
+            <button class="btn">0</button>
+            <button class="btn dot">.</button>
+            <button class="btn bg-red">=</button>
+            <button class="btn bg-yellow">+</button>
+            
+         </div>
+
+        </div>
+
+    </body>
+</html>
